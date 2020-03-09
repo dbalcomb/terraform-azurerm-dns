@@ -1,9 +1,19 @@
 output "name" {
-  description = "The resource name"
-  value       = azurerm_resource_group.main.name
+  description = "The DNS name"
+  value       = var.name
 }
 
 output "region" {
-  description = "The resource region"
-  value       = azurerm_resource_group.main.location
+  description = "The DNS region"
+  value       = var.region
+}
+
+output "domain" {
+  description = "The DNS domain"
+  value       = var.domain
+}
+
+output "zone" {
+  description = "The zone configuration"
+  value       = module.zone
 }
