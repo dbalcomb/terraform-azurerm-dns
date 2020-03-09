@@ -13,7 +13,7 @@ module "zone" {
 }
 
 module "host" {
-  source = "github.com/dbalcomb/terraform-azurerm-aks-ingress//modules/host"
+  source = "github.com/dbalcomb/terraform-azurerm-dns//modules/host"
 
   name = "www.example.com"
   zone = module.zone
