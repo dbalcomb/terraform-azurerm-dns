@@ -34,3 +34,4 @@ module "dns" {
 ## Modules
 
 - [Zone](modules/zone/README.md)
+- [Host](modules/host/README.md)
