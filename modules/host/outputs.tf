@@ -1,6 +1,6 @@
 output "name" {
   description = "The host name"
-  value       = var.name
+  value       = trimsuffix(azurerm_dns_a_record.main.fqdn, ".")
 }
 
 output "zone" {
